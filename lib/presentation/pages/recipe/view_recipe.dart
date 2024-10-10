@@ -116,7 +116,7 @@ class _ViewRecipeState extends State<ViewRecipe> {
                 itemCount: widget.recipe.steps.length,
                 itemBuilder: (context, index) {
                   return Text(
-                      'Step $index: ${widget.recipe.steps[index].instruction}');
+                      'Step ${index + 1}: ${widget.recipe.steps[index].instruction}');
                 },
               ),
             ),
