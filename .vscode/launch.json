@@ -1,0 +1,40 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Flutter: Launch",
+        "request": "launch",
+        "type": "dart",
+        "program": "lib/main.dart",
+        // "args": [
+        //   "--flavor",
+        //   "development", // Use if you're working with flavors (optional)
+        //   "--dart-define=ENVIRONMENT=dev" // Environment-specific configurations
+        // ]
+      },
+      {
+        "name": "Flutter: Run Tests",
+        "request": "launch",
+        "type": "dart",
+        "program": "test/", // Points to your test folder
+        "args": ["--no-sound-null-safety"] // Add this argument if required by your project
+      },
+      {
+        "name": "Flutter: Profile Mode",
+        "request": "launch",
+        "type": "dart",
+        "program": "lib/main.dart",
+        "flutterMode": "profile", // Use "profile" mode to gather performance information
+        "args": []
+      },
+      {
+        "name": "Flutter: Release Mode",
+        "request": "launch",
+        "type": "dart",
+        "program": "lib/main.dart",
+        "flutterMode": "release", // Use "release" mode for final app testing
+        "args": []
+      },
+    ]
+  }
+  
